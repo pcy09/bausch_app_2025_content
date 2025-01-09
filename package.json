@@ -9,7 +9,8 @@
     "start": "cross-env NODE_ENV=production next start",
     "start:prod": "cross-env NODE_ENV=production PORT=3007 next start",
     "start:release": "cross-env NODE_ENV=release PORT=3007 next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && touch out/.nojekyll && git add -f out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
