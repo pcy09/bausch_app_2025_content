@@ -1,0 +1,21 @@
+/*!* Reset CSS 및 공통 CSS 작성 *!*/
+
+html,
+body {
+  max-width: 100vw;
+  min-width: 1280px;
+  scroll-behavior: smooth;
+}
+
+.ant-checkbox-indeterminate .ant-checkbox-inner::after {
+  border-radius: 50%;
+}
+
+:root {
+  --mainColor: #04848c;
+  --backgroundColor: #ececec;
+  --defaultFontColor: #1f2937;
+  --borderRadius: 2px;
+  --nonActiveColor: #a4a4a4;
+  --activeColor: #336699;
+}
