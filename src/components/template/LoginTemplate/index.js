@@ -89,11 +89,15 @@ const LoginTemplate = () => {
     }
   }, [cookies]);
 
+  useEffect(() => {
+    alert('되나?');
+  }, []);
+
   return (
     <div css={mainContainerStyle}>
       <CardContainer css={cardStyle}>
         <Image width="300" src={LoginLogo} alt="LoginLogo" />
-        <p css={adminFont}>ADMIN Site Login</p>
+        <p css={adminFont}>ADMIN Site Login?????????????????????????????</p>
         <Form method="POST" css={marginTopStyle(12)} onSubmit={handleSubmit(onSubmit, onError)}>
           <div>
             <Controller
