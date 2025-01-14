@@ -7,7 +7,7 @@ const RedirectPage = () => {
     replace('/admin/login');
   }, [replace]);
 
-  return <h1>어드민 로그인페이지로 리다이렉트 됩니다. 되나??</h1>;
+  return <h1>어드민 로그인페이지로 리다이렉트 됩니다.</h1>;
 };
 
 export default RedirectPage;
