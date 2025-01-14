@@ -98,7 +98,7 @@ const LoginTemplate = () => {
       console.log('Not in React Native WebView environment');
       // 필요시 다른 처리
     }
-    alert('되나?');
+    alert('뭐지?');
   }, []);
 
   return (
