@@ -90,6 +90,14 @@ const LoginTemplate = () => {
   }, [cookies]);
 
   useEffect(() => {
+    // 웹 페이지의 로그인 처리 후
+    const token = 'your_generated_token'; // 로그인 후 받은 토큰
+    if (window.ReactNativeWebView) {
+      window.ReactNativeWebView.postMessage(token);
+    } else {
+      console.log('Not in React Native WebView environment');
+      // 필요시 다른 처리
+    }
     alert('되나?');
   }, []);
 
